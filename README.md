@@ -1,0 +1,1 @@
+# IFENN-with-PICNNs-for-phase-field-propagation
