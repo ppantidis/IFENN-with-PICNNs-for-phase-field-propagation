@@ -152,7 +152,7 @@ if Function_flag == "train_mode":
     loss_vec            = []
 
     # Load data for training
-    Htrain = np.array(list(scipy.io.loadmat(modelname + '_' + filename + '_PixelValuesFEM_D4.mat').items()), dtype = object)[:,1] 
+    Htrain = np.array(list(scipy.io.loadmat('M18_M27Mc_Ratio6_PixelValuesFEM_D3').items()), dtype = object)[:,1] 
     Htrain = Htrain[3]
     Htrain = torch.tensor(Htrain[0:2,:,:,:], requires_grad=False, dtype=torch.float32).to(device) # 
     
